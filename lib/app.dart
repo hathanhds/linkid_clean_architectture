@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'flavor_config.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -9,6 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Ready to Go',
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
+      supportedLocales: [Locale('en', ''), Locale('vi', '')],
       home: HomePage(),
     );
   }
