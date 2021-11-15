@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum Flavor { dev, prod }
+enum Flavor { dev, stag, prod }
 
 class FlavorValues {
   final String baseUrl;
@@ -28,6 +28,28 @@ class FlavorConfig {
     return _instance;
   }
 
-  static bool isProduction() => _instance.flavor == Flavor.prod;
-  static bool isDevelopment() => _instance.flavor == Flavor.dev;
+  static bool isDev() => _instance.flavor == Flavor.dev;
+  static bool isStag() => _instance.flavor == Flavor.dev;
+  static bool isProd() => _instance.flavor == Flavor.prod;
+}
+
+void setUpDevEnv() {
+  FlavorConfig(
+      flavor: Flavor.dev,
+      color: Colors.red,
+      values: FlavorValues(baseUrl: 'dev.url'));
+}
+
+void setUpStagEnv() {
+  FlavorConfig(
+      flavor: Flavor.stag,
+      color: Colors.green,
+      values: FlavorValues(baseUrl: 'dev.stag'));
+}
+
+void setUpProdEnv() {
+  FlavorConfig(
+      flavor: Flavor.prod,
+      color: Colors.orange,
+      values: FlavorValues(baseUrl: 'dev.prod'));
 }

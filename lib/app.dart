@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutter Ready to Go')),
+      appBar: AppBar(title: const Text('Test title')),
       body: Center(child: Text("Flavor: ${FlavorConfig.instance.name}")),
     );
   }

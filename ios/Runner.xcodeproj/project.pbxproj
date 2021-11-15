@@ -54,8 +54,6 @@
 		E367FAC3273A5E5300CCE3D0 /* Runner copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy-Info.plist"; path = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/ios/Runner copy-Info.plist"; sourceTree = "<absolute>"; };
 		E367FAD9273A5E6E00CCE3D0 /* Runner copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy2-Info.plist"; path = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/ios/Runner copy2-Info.plist"; sourceTree = "<absolute>"; };
 		E367FAFE273A63D800CCE3D0 /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Firebase; sourceTree = "<group>"; };
-		E367FB01273A759200CCE3D0 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Dev.xcconfig; path = Flutter/Dev.xcconfig; sourceTree = "<group>"; };
-		E367FB02273A759200CCE3D0 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Prod.xcconfig; path = Flutter/Prod.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +92,6 @@
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
-				E367FB01273A759200CCE3D0 /* Dev.xcconfig */,
-				E367FB02273A759200CCE3D0 /* Prod.xcconfig */,
 				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
 				9740EEB21CF90195004384FC /* Debug.xcconfig */,
 				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
@@ -254,7 +250,7 @@
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -285,7 +281,7 @@
 		};
 		E367FB00273A640500CCE3D0 /* Firebase */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -337,7 +333,6 @@
 /* Begin XCBuildConfiguration section */
 		249021D3217E4FDB00AE95B9 /* Profile-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB01273A759200CCE3D0 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -394,7 +389,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_dev.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +405,6 @@
 		};
 		97C147031CF9000F007C117D /* Debug-prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB02273A759200CCE3D0 /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -466,7 +460,6 @@
 		};
 		97C147041CF9000F007C117D /* Release-prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB02273A759200CCE3D0 /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -525,7 +518,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_prod.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,7 +541,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_prod.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,7 +557,6 @@
 		};
 		E367FAA6273A55AD00CCE3D0 /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB01273A759200CCE3D0 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -626,7 +618,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_dev.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,7 +635,6 @@
 		};
 		E367FAA8273A55C800CCE3D0 /* Release-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB01273A759200CCE3D0 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -702,7 +693,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_dev.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -718,7 +709,6 @@
 		};
 		E367FAAA273A55ED00CCE3D0 /* Profile-prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E367FB02273A759200CCE3D0 /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -775,7 +765,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = "${FLUTTER_APPLICATION_PATH}/${FLUTTER_TARGET}";
+				FLUTTER_TARGET = "/Users/thanhnth/Git/Training/flutter-selfprojects/linkid_clean_architecture/lib/main_prod.dart";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
