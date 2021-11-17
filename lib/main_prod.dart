@@ -3,6 +3,6 @@ import 'package:linkid_clean_architecture/app.dart';
 import 'package:linkid_clean_architecture/flavor_config.dart';
 
 void main() {
-  setUpStagEnv();
+  setUpProdEnv();
   runApp(const MyApp());
 }
